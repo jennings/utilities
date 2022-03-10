@@ -1,7 +1,7 @@
 <script lang="ts">
 	import clipboardCopy from 'clipboard-copy';
 
-	let indentSize = 2;
+	let indentSize = "2";
 
 	let json = '';
 
