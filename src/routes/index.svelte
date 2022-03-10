@@ -2,24 +2,19 @@
 	export const prerender = true;
 </script>
 
-<script lang="ts">
-	import Counter from '$lib/Counter.svelte';
-</script>
-
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
 
 <section>
 	<h1>
-		Welcome to your new<br />SvelteKit app
+		Stephen's Toolbox
 	</h1>
 
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
+	<p>
+		Little utilities I need occasionally.
+		Also, an excuse to learn <a href="https://svelte.dev/">Svelte</a>.
+	</p>
 </section>
 
 <style>
