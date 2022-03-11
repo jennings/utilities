@@ -55,12 +55,6 @@
 		<textarea readonly rows="5" cols="80" bind:value={formatted} /><br />
 		<button on:click={copy}>Copy</button>
 	</div>
-
-	<p>
-		I know there are a thousand of these things out there. But I just google for one every time I
-		need it, and I have no idea when I've landed on one that secretly sends all my data to the
-		Empire of Octavia.
-	</p>
 </div>
 
 <style>
