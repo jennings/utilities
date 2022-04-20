@@ -1,11 +1,12 @@
 <script lang="ts">
 	import clipboardCopy from "clipboard-copy";
 
+	let shouldIndent = true;
 	let indentSize = "2";
 
 	let json = "";
 
-	$: formatted = format(json, Number(indentSize));
+	$: formatted = format(json, shouldIndent ? Number(indentSize) : 0);
 
 	function format(json, indentSize) {
 		if (json === "") {
@@ -46,7 +47,20 @@
 	</blockquote>
 
 	<div>
-		Indent <input bind:value={indentSize} type="number" /><br />
+		<label>
+			<input type="radio" name="shouldIndent" bind:group={shouldIndent} value={true} />
+			<input
+				bind:value={indentSize}
+				type="number"
+				on:click={(e) => (shouldIndent = true)}
+				on:change={(e) => (shouldIndent = true)}
+			/>
+		</label>
+		<label>
+			<input type="radio" name="shouldIndent" bind:group={shouldIndent} value={false} />
+			Compact
+		</label>
+		<br />
 
 		Input:<br />
 		<textarea rows="5" cols="80" bind:value={json} /><br />
