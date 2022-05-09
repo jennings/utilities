@@ -24,6 +24,9 @@
 			<li class:active={$page.url.pathname === '/utilities/base64'}>
 				<a sveltekit:prefetch href="/utilities/base64">Base 64</a>
 			</li>
+			<li class:active={$page.url.pathname === '/utilities/prettier'}>
+				<a sveltekit:prefetch href="/utilities/prettier">Prettier</a>
+			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
