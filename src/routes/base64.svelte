@@ -94,7 +94,7 @@
 						</li>
 						<li>
 							Decode: <code on:click={highlightThis}>
-								[system.text.encoding]::UTF8.ToString([convert]::FromBase64String((Get-Clipboard)))
+								[system.text.encoding]::UTF8.GetString([convert]::FromBase64String((Get-Clipboard)))
 							</code>
 						</li>
 					</ul>
