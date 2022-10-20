@@ -2,6 +2,7 @@
   "name": "utilities",
   "version": "0.0.1",
   "scripts": {
+    "start": "svelte-kit dev",
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
@@ -34,7 +35,9 @@
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
+    "@types/marked": "^4.0.7",
     "clipboard-copy": "^4.0.1",
-    "cookie": "^0.4.1"
+    "cookie": "^0.4.1",
+    "marked": "^4.1.1"
   }
 }
