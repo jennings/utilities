@@ -74,7 +74,7 @@
 </script>
 
 <svelte:head>
-	<title>Format JSON</title>
+	<title>Base-64 encoding</title>
 </svelte:head>
 
 <div>
